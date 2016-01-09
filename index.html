@@ -1,139 +1,143 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="shortcut icon" href="img/favicon.ico"> 
-	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
-	<link rel="stylesheet" href="css/main.css">
-
-	<title>Elad Joseph</title>
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Online Responsive Resume Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
 </head>
+
 <body>
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1><span itemprop="name">Elad Joseph</span></h1>
+				<h3  style="text-decoration: none;padding-left: 0px;"><span itemprop="jobTitle">Computer Vision Algorithms Developer &amp; Physicst</span></h3>
+				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <!--<span itemprop="addressLocality">Hudson</span>, -->
+				  <span itemprop="addressRegion">Haifa</span>, 
+				  <span itemprop="addressCountry">Israel</span>
+				</small>
+				<small><span itemprop="email">eladjoseph@hotmail.com</span></small>
+				<small><a href="https://github.com/eladj" itemprop="url">GitHub</a> &bull; <a href="https://il.linkedin.com/in/elad-joseph-523a9963" itemprop="url">LinkedIn</a> &bull;  <a href="http://stackoverflow.com/users/2807860/elad-joseph">StackOverflow</a></small>
+			</div>
+			
+			<div id="photo">
+				<img src="images/me-200.jpg" alt="Jake Rocheleau resume photo avatar" itemprop="image" />
+			</div>
+		</header>
+		
+		<section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">I am a computer vision and algorithms engineer with physics and computational modeling background.</p>
+		</section>
 
-
-	<header>
-
-		<div id="logo-container">
-			<div id="logo"><a href="/">Elad Joseph</a></div>
-			<div id="subtitle">Some of my projects</div>
-		</div>
-<!-- 		<nav>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li> 
-				<li><a href="mailto:eladjoseph@hotmail.com" class="bordered">Contact</a></li>
-			</ul>
-		</nav> -->
-
-	</header>
-
-	<div id="content">
-
-	<!--	<section class="intro">
-			<h1>Hello, <span class="nl"></span>we are here to help you.</h1>
-			<p>
-				Gumba is a simple single-page website template. This is the place where you would normally introduce yourself. You can easily change the template to fit your needs by changing the text, photos and styles.
-			</p>
-		</section> -->
-
-		<section class="row">
-        
-              <div class="col-full">
-				<h2>Whist Card Game</h2>
+		<section id="projects">
+			<h2>Projects</h2>
+            
+				<h3>Whist Card Game</h3>
 				<p>
 					This is a full implementation of the <a href="https://en.wikipedia.org/wiki/Israeli_whist">Israeli Whist</a> card game, including GUI (PyQt) and basic AI.
-                       Check the project <a href="https://github.com/eladj/Whist">GitHub repository</a>.
-				</p>                
-                <div class="photo-grid">
-                    <a href="img/whist_img1.jpg" rel="lightbox" class="col-3"><img src="img/whist_img1.jpg" alt="PyWhist"></a>
-                    <a href="img/whist_img2.jpg" rel="lightbox" class="col-3"><img src="img/whist_img2.jpg" alt="PyWhist"></a>
-                    <a href="img/whist_img3.jpg" rel="lightbox" class="col-3"><img src="img/whist_img3.jpg" alt="PyWhist"></a>
-                </div>
-			</div>
-            
-              <div class="col-full">
-				<h2>Scrabble OCR Android App</h2>
+                       <br>Check the project <a href="https://github.com/eladj/Whist">GitHub repository</a>.
+				
+                    <table align="center" style="width:90%;">
+                      <tr>
+                        <td><a href="images/whist_img1.jpg"><img src="images/whist_img1.jpg" alt="whist1"></a></td>
+                        <td><a href="images/whist_img2.jpg"><img src="images/whist_img2.jpg" alt="whist2"></a></td> 
+                        <td><a href="images/whist_img3.jpg"><img src="images/whist_img3.jpg" alt="whist3"></a></td>
+                      </tr>
+                    </table>
+                  </p>
+				<h3>Scrabble OCR Android App</h3>
 				<p>
                        Real-time OCR Android app for Scrabble.
                        It uses OpenCV for Android for the image processing and <a href="https://github.com/tesseract-ocr">Tesseract-OCR</a>.
                        In the repository there are also two PC prototypes, implemented in Python and C++.
-                       Check the project <a href="https://github.com/eladj/ScrabbleOCR">GitHub repository</a>.
+                       <br>Check the project <a href="https://github.com/eladj/ScrabbleOCR">GitHub repository</a>.
 				</p>
-                <div class="photo-grid">
-                    <a href="img/scrabble_img1.jpg" rel="lightbox" class="col-2"><img src="img/scrabble_img1.jpg" alt="PyWhist"></a>
-                    <a href="img/scrabble_img2.jpg" rel="lightbox" class="col-2"><img src="img/scrabble_img2.jpg" alt="PyWhist"></a>
-                    <a href="img/scrabble_img3.jpg" rel="lightbox" class="col-2"><img src="img/scrabble_img3.jpg" alt="PyWhist"></a>
-                    <a href="img/scrabble_img4.jpg" rel="lightbox" class="col-2"><img src="img/scrabble_img4.jpg" alt="PyWhist"></a>
-                </div>                
-			</div>     
-            
-			<div class="col-full">
-				<h2>OpenCV HDR Tutorial</h2>
+                <table align="center" style="width:90%;">
+                    <tr>
+                        <td><a href="images/scrabble_img1.jpg"><img src="images/scrabble_img1.jpg" alt="PyWhist"></a></td>
+                        <td><a href="images/scrabble_img2.jpg"><img src="images/scrabble_img2.jpg" alt="PyWhist"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="images/scrabble_img3.jpg"><img src="images/scrabble_img3.jpg" alt="PyWhist"></a></td>
+                        <td><a href="images/scrabble_img4.jpg"><img src="images/scrabble_img4.jpg" alt="PyWhist"></a></td>
+                    </tr>
+                </table>                   
+                    
+				<h3>OpenCV HDR Tutorial</h3>
 				<p>
-					I've added an High-Dyanmic-Range (HDR) tutorial to the <a href="http://docs.opencv.org/3.1.0/d2/df0/tutorial_py_hdr.html">OpenCV documentation</a>.
+					An High-Dyanmic-Range (HDR) tutorial for the <a href="http://docs.opencv.org/3.1.0/d2/df0/tutorial_py_hdr.html">OpenCV documentation</a>.
                        This tutorial explains the basics of HDR photography and shows examples using the algorithms currently implemented in OpenCV.
 				</p>
-                  <div class="photo-grid">
-                      <a href="img/hdr_exposures.jpg" rel="lightbox" class="col-3"><img src="img/hdr_exposures.jpg" alt="HDR input images"></a>                      
-                      <a href="img/hdr_tutorial_mertens.jpg" rel="lightbox" class="col-3"><img src="img/hdr_tutorial_mertens.jpg" alt="HDR Mertens fusion"></a>
-                      <a href="img/dhr_camera_response.jpg" rel="lightbox" class="col-3"><img src="img/dhr_camera_response.jpg" alt="HDR Camera Response"></a>
-                  </div>   
-			</div>
+                  <table align="center" style="width:90%;">
+                    <tr>
+                      <td><a href="images/hdr_exposures.jpg"><img src="images/hdr_exposures.jpg" alt="HDR input images"></a></td>
+                      <td><a href="images/hdr_tutorial_mertens.jpg"><img src="images/hdr_tutorial_mertens.jpg" alt="HDR Mertens fusion"></a></td>
+                      <td><a href="images/dhr_camera_response.jpg"><img src="images/dhr_camera_response.jpg" alt="HDR Camera Response"></a></td>
+                    </tr>
+                  </table>   
+                    
 		</section>
-
-		<section class="row">
-			<div class="col">
-				<h2>Contact</h2>
-				<p>
-					You can contact me by <a href="mailto:eladjoseph@hotmail.com">email</a>.
-				</p>
-			</div>
-			<div class="col">
-				<h2>GitHub</h2>
-				<p>
-					Check my <a href="https://github.com/eladj">GitHub repositories</a>.
-				</p>
-			</div>
+		
+		<!--<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
+			<section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+					<li itemprop="itemListElement">Python</li>
+					<li itemprop="itemListElement">C++</li>
+					<li itemprop="itemListElement">C</li>
+					<li itemprop="itemListElement">HTML5/CSS</li>
+				</ul>
+			</section>
+			
+			<section id="skills-right">
+				<h4 itemprop="about">Software</h4>
+				<ul>
+					<li itemprop="itemListElement">OpenCV</li>
+					<li itemprop="itemListElement">PyQt</li>
+					<li itemprop="itemListElement">Pandas</li>
+					<li itemprop="itemListElement">Django</li>					
+				</ul>
+			</section>
+		</section> -->
+		
+		<section id="education">
+			<h2>Education</h2>			
+                    <ul>
+					<p><b>BSc in Physics and BSc in Materials Engineering</b>, <span itemprop="alumniOf">Technion – Israel Institute of Technology</span></p>
+					<p><b>MSc in Energy Engineering</b>, <span itemprop="alumniOf">Technion – Israel Institute of Technology</span><br>
+                          <u>Thesis</u>: Computational Simulations of Thermoelectric Materials, for Renewable Energy Applications.
+                       </p>
+				</ul>
 		</section>
+        
+		<section id="publications">
+			<h2>Academic Publications</h2>
+			<p>Towards a predictive route for selection of doping elements for the thermoelectric compound PbTe from first-principles
+                <br><i>Elad Joseph and Yaron Amouyal.</i> <a href="http://dx.doi.org/10.1063/1.4919425">J. Appl. Phys. 117, 175102 (2015)</a></p>
+			<p>Enhancing Thermoelectric Performance of PbTe-Based Compounds by Substituting Elements: A First Principles Study
+                <br><i>Elad Joseph and Yaron Amouyal.</i> <a href="http://dx.doi.org/10.1007/s11664-014-3416-7">J. Elect. Mater. 44, 6, 1460-1468 (2014)</a></p>
+		</section>        
+		
+		<!--<section id="experience">
+			<h2>Work Experience</h2>
+			<p>Microsoft, Advanced Imaging Technology (HoloLens) -  ~ 2015</p>
+			<p>Best Buy - Image Processing ~ 2010-2012</p>
+			<p>Freelance Writer for <span itemprop="worksFor">Hongkiat.com</span> ~ 2011-Present</p>
+		</section> -->
 
-
-		<section class="row">
-			<div class="col-full">
-				<p>
-					©2016 Elad Joseph
-				</p>
-			</div>
-		</section>
- 
 	</div>
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script>
-	if (!window.jQuery) 
-	{
-	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
-	}
-	</script>
-
-	<script src="js/vendor/jquery.fluidbox.min.js"></script>
-	<script src="js/main.js"></script>
-<!--
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
--->
 </body>
 </html>
-
