@@ -18,6 +18,8 @@ img { border: 0; max-width: 100%; }
 table, th, td {
     padding: 15px;
     align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 a { color: #5582d6; text-decoration: none; }
