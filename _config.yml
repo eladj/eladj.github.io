@@ -35,6 +35,9 @@ plugins:
 
 highlighter: rouge
 
+# Google Analytics
+google_analytics: UA-128380233-1
+
 # Local settings
 port: 4444
 
